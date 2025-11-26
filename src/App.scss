@@ -1,0 +1,276 @@
+
+@use "./styles/variables.scss";
+@use "sass:map";
+
+
+//industry font
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Light"), local("Montserrat-Light"),
+    url("./fonts/Montserrat/Montserrat-Light.otf") format("otf"),
+    url("./fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("./fonts/Montserrat/Montserrat-Bold.otf") format("otf"),
+    url("./fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold Italic"), local("Montserrat-BoldItalic"),
+    url("./fonts/Montserrat/Montserrat-BoldItalic.otf") format("otf"),
+    url("./fonts/Montserrat/Montserrat-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Light Italic"), local("Montserrat-LightItalic"),
+    url("./fonts/Montserrat/Montserrat-LightItalic.otf") format("otf"),
+    url("./fonts/Montserrat/Montserrat-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Medium"), local("Montserrat-Medium"),
+    url("./fonts/Montserrat/Montserrat-Medium.otf") format("otf"),
+    url("./fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Medium"), local("Montserrat-Medium"),
+    url("./fonts/Montserrat/Montserrat-Medium.otf") format("otf"),
+    url("./fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Medium Italic"), local("Montserrat-MediumItalic"),
+    url("./fonts/Montserrat/Montserrat-MediumItalic.otf") format("otf"),
+    url("./fonts/Montserrat/Montserrat-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Medium Italic"), local("Montserrat-MediumItalic"),
+    url("./fonts/Montserrat/Montserrat-MediumItalic.otf") format("otf"),
+    url("./fonts/Montserrat/Montserrat-MediumItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("./fonts/Montserrat/Montserrat-Regular.otf") format("otf"),
+    url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular Italic"), local("Montserrat-RegularItalic"),
+    url("./fonts/Montserrat/Montserrat-RegularItalic.otf") format("otf"),
+    url("./fonts/Montserrat/Montserrat-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat SemiBold Italic"), local("Montserrat-SemiBoldItalic"),
+    url("./fonts/Montserrat/Montserrat-SemiBoldItalic.otf") format("otf"),
+    url("./fonts/Montserrat/Montserrat-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"),
+    url("./fonts/Montserrat/Montserrat-SemiBold.otf") format("otf"),
+    url("./fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+.container {
+  width: 100%;
+  border: 1px solid black;
+  /* max-width: 1280px; */
+
+}
+
+
+.create-acc-container {
+  width: map.get(variables.$layout-width, "1");
+  margin: auto;
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+  gap: 30px;
+  padding-top: 50px;
+
+
+
+  .left-section {
+    width: 55%;
+
+    
+        .tagline {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .title {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 58px;
+            margin-bottom: 30px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+
+
+  }
+
+  .right-section {
+    width: 40%;
+    
+
+      .signup-header {
+            background: #fff;
+            border: 1px solid variables.$light-green;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 14px;
+            border-radius: 10px 10px 0 0;
+            padding: 8px 20px;
+            margin-bottom: 5px;
+            font-weight: 600;
+
+            .back-arrow {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                cursor: pointer;
+
+                svg {
+                    font-size: 2em;
+                }
+            }
+
+        }
+
+        .flex {
+            justify-content: space-between;
+
+        }
+
+        .block {
+            justify-content: flex-end;
+        }
+
+        .form-card {
+            width: 100%;
+            // max-width: 450px;
+            background: white;
+            border: 1.5px solid variables.$light-green;
+            border-radius: 12px;
+            padding: 25px;
+
+
+
+            h3 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .form-desc {
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+
+            .patient-c-input {
+                border: 1px solid variables.$light-green;
+                border-radius: 10px;
+
+            }
+
+
+            /* Button */
+            .form-btn {
+                width: 100%;
+                padding: 14px;
+                text-align: center;
+                color: white;
+                border: none;
+                font-size: 16px;
+                border-radius: 10px;
+                font-weight: 600;
+
+
+            }
+
+            .next-btn {
+                background: variables.$green;
+                margin-top: 30px;
+
+                &:hover {
+                    background: variables.$dark-green;
+                    cursor: pointer;
+                }
+
+            }
+
+
+            .create-btn {
+                margin: 50px 0;
+            }
+        }
+  }
+
+
+}
