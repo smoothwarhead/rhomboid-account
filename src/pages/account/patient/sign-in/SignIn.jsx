@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import NavLogo from "../../../../components/globals/navigation/main-nav/navLogo.png";
+import NavLogo from "../../../../assets/navLogo.png";
 import Apple from "../../../../assets/apple-logo.png";
 import Microsoft from "../../../../assets/Microsoft_logo.svg.png";
 import Google from "../../../../assets/Google__G__logo.svg.png";

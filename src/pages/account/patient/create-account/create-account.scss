@@ -179,7 +179,7 @@
             }
 
             .patient-c-input {
-                border: 1px solid variables.$light-green;
+                border: 1px solid variables.$ehr-blue;
                 border-radius: 10px;
 
             }
@@ -199,12 +199,16 @@
 
             }
 
-            .next-btn {
-                background: variables.$green;
+            .next-btn{
                 margin-top: 30px;
 
+            }
+
+            .next-btn, .create-btn {
+                background: variables.$ehr-blue;
+
                 &:hover {
-                    background: variables.$dark-green;
+                    background: variables.$ehr-dark-blue;
                     cursor: pointer;
                 }
 

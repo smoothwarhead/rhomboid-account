@@ -6,6 +6,9 @@ import ProviderSignin from "./pages/account/provider/sign-in/ProviderSignin";
 import SelectAccount from "./pages/account/provider/select-account/SelectAccount";
 import ProfessionalAccount from "./pages/account/provider/create-account/ProfessionalAccount";
 import OrganizationAccount from "./pages/account/provider/create-account/OrganizationAccount";
+import SignIn from "./pages/account/patient/sign-in/SignIn";
+import CreateAccount from "./pages/account/patient/create-account/CreateAccount";
+
 
 
 
@@ -20,12 +23,12 @@ function App() {
             <Route path="/" element={<AccountLayout />}>
               <Route index element={<AccountHome />} />
 
-              {/* <Route path="/patient" element={<SignIn />} /> */}
+              <Route path="/patient" element={<SignIn />} />
 
-              {/* <Route
+              <Route
                 path="/patient/create-account"
                 element={<CreateAccount />}
-              /> */}
+              />
 
               <Route path="/provider" element={<ProviderSignin />} />
               <Route

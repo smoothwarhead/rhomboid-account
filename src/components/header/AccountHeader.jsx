@@ -18,8 +18,8 @@ const AccountHeader = () => {
             Home        
         </Link>
 
-    {  pathname.includes("provider/") && 
-      <Link to="/patient">
+    {  (pathname.includes("provider/") || pathname.includes("patient/")) && 
+      <Link to={pathname.includes("provider/") ? "/provider"  : "/patient"}>
         Login
       </Link>
     }

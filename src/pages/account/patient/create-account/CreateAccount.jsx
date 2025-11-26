@@ -9,6 +9,7 @@ import { PatientCreateInput1, PatientCreateInput2 } from "../../../../utils/data
 import usePasswordToggle from "../../../../hooks/usePasswordToggle";
 import { useState } from "react";
 import { hasEmpty } from "../../../../utils/methods";
+import "./create-account.scss";
 
 
 
